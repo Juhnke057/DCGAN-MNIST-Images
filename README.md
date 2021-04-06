@@ -12,7 +12,11 @@ Here are the generated images for every 10 epochs:
 <br/>
 ![dcgan_generated_image_epoch_30](https://user-images.githubusercontent.com/57365322/113790950-d315f780-9742-11eb-8481-7ded1498a42b.png)
 <br/>
+<br/>
+<br/>
+<br/>
 Here is also the differance between the old GAN (left) VS the new DCGAN (right)
+<br/>
 
 ![DCGANVSGAN10](https://user-images.githubusercontent.com/57365322/113791023-ff317880-9742-11eb-92bf-c570a8ed87ef.jpg)
 <br/>
