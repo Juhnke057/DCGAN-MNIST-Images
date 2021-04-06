@@ -72,9 +72,7 @@ for epoch in range(NUM_EPOCHS):
     epoch_g_loss = 0.
 
     for step in range(BATCH_COUNT):
-        # ---------------------
         #  Train Discriminator
-        # ---------------------
 
         # Randomly select half a batch of real images
         idx = np.random.randint(0, X_train.shape[0], HALF_BATCH)
@@ -95,9 +93,7 @@ for epoch in range(NUM_EPOCHS):
 
         epoch_d_loss += d_loss
 
-        # ---------------------
         # Train Generator
-        # ---------------------
         noise = np.random.normal(0, 1, (BATCH_SIZE, NOISE_DIM))
         real_y = np.ones((BATCH_SIZE, 1))
         g_loss = combined.train_on_batch(noise, real_y)
