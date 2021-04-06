@@ -65,6 +65,7 @@ def save_imgs(epoch, num_examples=100):
         plt.imshow(generated_imgs[i], interpolation='nearest', cmap='gray')
         plt.axis('off')
     plt.tight_layout()
+    # Saves the images every 10 epochs
     plt.savefig('images/dcgan_generated_image_epoch_{0}.png'.format(epoch + 1))
 
 for epoch in range(NUM_EPOCHS):
@@ -102,7 +103,7 @@ for epoch in range(NUM_EPOCHS):
         epoch_g_loss += g_loss
 
     print("%d [D loss: %f] [G loss: %f]" % ((epoch + 1), epoch_d_loss / BATCH_COUNT, epoch_g_loss / BATCH_COUNT))
-
+        #Saves the DCGAN model
     if (epoch + 1) % 10 == 0:
         generator.save('models/dcgan_generator_{0}.h5'.format(epoch + 1))
         save_imgs(epoch)
