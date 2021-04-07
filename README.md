@@ -1,6 +1,8 @@
 # DCGAN-MNIST-Images
 This is a update from my normal gan. Much slower to train but gives way better results!
-Corection: Enableing tensorflow shortened the time between epochs alot. It went from 3min to 15sec.
+<br/>
+Corection: Enableing tensorflow-gpu with nivida CUDA shortened the time between epochs alot. It went from 3min to 15sec.
+<br/>
 Here are the generated images for every 10 epochs:
 ![dcgan_generated_image_epoch_40](https://user-images.githubusercontent.com/57365322/113790943-d14c3400-9742-11eb-875a-a6a8866ba68d.png)
 <br/>
